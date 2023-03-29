@@ -1,0 +1,106 @@
+<%- include('./partials/head.ejs') %>
+<div class="bgcolor">
+    <%- include('./partials/nav.ejs') %>
+    <div class="hero d-flex justify-content-center align-items-center text-white">
+        <div class="d-flex gap-5">
+            <div class="d-flex flex-column justify-content-center me-5" style="width: 400px;">
+                <h1>Hello</h1>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores ipsam consequuntur pariatur illo nihil veritatis dolor est perferendis, dolore eaque!
+            </div>
+            <div class="d-flex gap-3">
+                <div>
+                    <img style="width: 250px; height: 350px;" src="/img/parallax1.jpg" alt="" srcset="">
+                </div>
+                <div>
+                    <div class="d-flex flex-column align-items-end mb-5" style="width: 250px;">
+                        <h5>Kenneth Tan</h5>
+                        <span>Web devopler</span>
+                    </div>
+                    <img style="width: 250px; height: 350px;" src="/img/parallax1.jpg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="technologies"></div>
+    <div class="parallax1">
+        <div style="height: 90px;"></div>
+        <div class="container d-flex flex-wrap align-items-center text-white">
+            <div class="d-flex justify-content-center flex-wrap w-50">
+                <div class="d-flex flex-column justify-content-center align-items-center col-6">
+                    <img src="/img/html.png" alt="" style="width: 150px; height: 150px;">
+                    <p class="text-center fs-4 mt-1">HTML</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-6">
+                    <img src="/img/css.png" alt="" style="width: 150px; height: 150px;">
+                    <p class="text-center fs-4 mt-1">CSS</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-12">
+                    <img src="/img/JavaScript.png" alt="" style="width: 150px; height: 150px;">
+                    <p class="text-center fs-4 mt-1">Javascript</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-6">
+                    <img src="/img/bootstrap.png" alt="" style="width: 150px; height: 150px;">
+                    <p class="text-center fs-4 mt-1">Bootstrap</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-6">
+                    <img src="/img/php.png" alt="" style="width: 150px; height: 150px;">
+                    <p class="text-center fs-4 mt-1">PHP</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center flex-wrap w-50">
+                <div class="d-flex flex-column justify-content-center align-items-center col-6">
+                    <img src="/img/nodejs.png" alt="" style="width: 150px; height: 150px;">
+                    <p class="text-center fs-4 mt-1">Node JS</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-6">
+                    <img src="/img/expressjs.png" alt="" style="width: 150px; height: 150px;">
+                    <p class="text-center fs-4 mt-1">Express JS</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-12">
+                    <img src="/img/mysql.png" alt="" style="width: 150px; height: 150px;">
+                    <p class="text-center fs-4 mt-1">MySql</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-6">
+                    <img src="/img/mongodb.png" alt="" style="width: 150px; height: 150px;">
+                    <p class="text-center fs-4 mt-1">Mongo DB</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-6">
+                    <img src="/img/react.png" alt="" style="width: 150px; height: 150px;">
+                    <p class="text-center fs-4 mt-1">React JS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects"></div>
+    <div class="project">
+        <div class="container d-flex justify-content-center align-items-center text-white h-100">
+            <div class="d-flex flex-column col-6">
+                <div class="d-flex gap-5 pb-5 mb-5 w-100" data-aos="zoom-out-right">
+                    <img class="img-thumbnail" src="/img/cliniclass.png" alt="" style="width: 300px; height: 180px;">
+                    <div style="width: 200px;">
+                        <a target="_blank" href="https://cliniclass.vercel.app/">Mini Project 1: Cliniclass</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptate cum non voluptatibus atque consequuntur impedit, beatae totam quisquam libero.</p>
+                    </div>
+                </div>
+                <div class="d-flex gap-5 mt-5 w-100" data-aos="zoom-out-right">
+                    <img class="img-thumbnail" src="/img/kodegram.png" alt="" style="width: 300px; height: 180px;">
+                    <div style="width: 200px;">
+                        <a target="_blank" href="https://kodegram.devph.space/">Capstone: Kodegram</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptate cum non voluptatibus atque consequuntur impedit, beatae totam quisquam libero.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex flex-row-reverse gap-5 w-100" data-aos="zoom-out-left">
+                    <img class="img-thumbnail" src="/img/supersell.png" alt="" style="width: 300px; height: 180px;">
+                    <div style="width: 200px;">
+                        <a target="_blank" href="https://supersell.cyclic.app/">Mini Project 2: Supersell</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptate cum non voluptatibus atque consequuntur impedit, beatae totam quisquam libero.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<%- include('./partials/foot.ejs') %>

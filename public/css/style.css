@@ -1,0 +1,36 @@
+.bgcolor {
+    background-color: #000000;
+    background-image: linear-gradient(212deg, #000000 0%, #361257 50%, #a6b0b8 100%);
+}
+.mynav {
+    transition: background .5s;
+}
+nav.scrolled {
+    background-color: #081451;
+    background-image: linear-gradient(90deg, #081451 0%, #C850C0 46%, #000000 100%);
+}
+.menu {
+    backdrop-filter: blur(10px);
+    /* color: white; */
+    text-shadow: 10px 10px 10px black, 0 0 1em black, 0 0 0.2em black;
+}
+.menu:hover {
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+.hero {
+    height: calc(100vh - 56.8px);
+}
+.parallax1 {
+    background-image: url("/img/bulb.jpg");
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project {
+    height: 100vh;
+    background: linear-gradient(180.2deg, rgb(120, 85, 137) -6.9%, rgb(35, 9, 31) 76.7%);
+}
