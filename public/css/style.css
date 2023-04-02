@@ -1,3 +1,21 @@
+/* scroll design */
+#style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: none;
+}
+#style-2::-webkit-scrollbar
+{
+	width: 0px;
+}
+#style-2::-webkit-scrollbar-thumb {
+    background: white;
+    -webkit-box-shadow: none;
+}
+#style-2::-webkit-scrollbar-thumb:window-inactive {
+    background: none;
+}
+/* ----------------------- */
+
 .bgcolor {
     background-color: #000000;
     background-image: linear-gradient(212deg, #000000 0%, #361257 50%, #a6b0b8 100%);
@@ -11,7 +29,6 @@ nav.scrolled {
 }
 .menu {
     backdrop-filter: blur(10px);
-    /* color: white; */
     text-shadow: 10px 10px 10px black, 0 0 1em black, 0 0 0.2em black;
 }
 .menu:hover {
@@ -30,7 +47,39 @@ nav.scrolled {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.parallax1 {
+    background-image: url("/img/bulb.jpg");
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .project {
+    height: 100vh;
+    background: linear-gradient(180.2deg, rgb(120, 85, 137) -6.9%, rgb(35, 9, 31) 76.7%);
+}
+.work {
+    background-image: url("/img/lights.jpg");
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.active {
+    color: white;
+    text-shadow: 2px 2px 4px yellow, 0 0 1em yellow, 0 0 0.2em yellow;
+}
+.fstyle {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.smalltxt {
+    font-size: 12px;
+}
+.contact {
     height: 100vh;
     background: linear-gradient(180.2deg, rgb(120, 85, 137) -6.9%, rgb(35, 9, 31) 76.7%);
 }
