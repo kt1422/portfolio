@@ -16,6 +16,9 @@
 }
 /* ----------------------- */
 
+body {
+    overflow-x: hidden;
+}
 .bgcolor {
     background-color: #000000;
     background-image: linear-gradient(212deg, #000000 0%, #361257 50%, #a6b0b8 100%);
@@ -40,20 +43,12 @@ nav.scrolled {
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 .hero {
-    height: calc(100vh - 56.8px);
+    /* height: calc(100vh - 56.8px); */
+    min-height: 100vh;
 }
 .parallax1 {
     background-image: url("/img/bulb.jpg");
-    height: 100vh;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.parallax1 {
-    background-image: url("/img/bulb.jpg");
-    height: 100vh;
+    min-height: 100vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -61,12 +56,12 @@ nav.scrolled {
     background-size: cover;
 }
 .project {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(180.2deg, rgb(120, 85, 137) -6.9%, rgb(35, 9, 31) 76.7%);
 }
 .work {
     background-image: url("/img/lights.jpg");
-    height: 100vh;
+    min-height: 100vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -84,7 +79,7 @@ nav.scrolled {
     font-size: 12px;
 }
 .contact {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(180.2deg, rgb(120, 85, 137) -6.9%, rgb(35, 9, 31) 76.7%);
 }
 .overlay {
@@ -103,12 +98,6 @@ nav.scrolled {
 }
 .pjcontainer:hover .overlay {
     opacity: 1;
-}
-.contact-left {
-    flex-basis: 35%;
-}
-.contact-right {
-    flex-basis: 60%;
 }
 .contact-left p {
     margin-top: 30px;
@@ -133,11 +122,15 @@ nav.scrolled {
     color: #ff004f;
     transform: translateY(-5px);
 }
-.btn.btn2 {
+.btn2 {
     padding: 10px 40px;
     display: inline-block;
-    background-color: #ababab;
-    margin-top: 25px;
+    margin-top: 20px;
+}
+.btn3 {
+    padding: 10px 40px;
+    display: inline-block;
+
 }
 .sub-title {
     font-size: 60px;
@@ -157,4 +150,57 @@ form input, form textarea {
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
+}
+
+.hero-flex {
+    flex-direction: row;
+}
+@media only screen and (max-width: 1050px) {
+    .hero-flex {
+        flex-direction: column-reverse;
+    }
+}
+.hero-pic {
+    flex-direction: row;
+}
+.hero-name {
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 560px) {
+    .hero-pic {
+        flex-direction: column;
+    }
+    .hero-name {
+        align-items: center;
+    }
+    .hero-hide {
+        display: none;
+    }
+}
+.pjm {
+    margin-top: 30px;
+}
+.pjs {
+    align-self: start;
+    flex-direction: row;
+}
+.pje {
+    align-self: end;
+    flex-direction: row-reverse;
+}
+@media only screen and (min-width: 1400px) {
+    .pjm {
+        margin-top: -100px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .pjs, .pje {
+        align-self: center;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .pjs, .pje {
+        flex-direction: column;
+    }
 }

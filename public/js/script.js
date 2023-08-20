@@ -26,18 +26,18 @@ window.onscroll = function() {
         tech.classList.remove('active');
     }
 
-    if (window.pageYOffset >= 1400 && window.pageYOffset < 2100) {
+    if (window.pageYOffset >= 1400 && window.pageYOffset < 2600) {
         project.classList.add('active');
     } else {
         project.classList.remove('active');
     }
 
-    if (window.pageYOffset >= 2100 && window.pageYOffset < 2800) {
+    if (window.pageYOffset >= 2600 && window.pageYOffset < 6250) {
         work.classList.add('active');
     } else {
         work.classList.remove('active');
     }
-    if (window.pageYOffset >= 2800) {
+    if (window.pageYOffset >= 6250) {
         contact.classList.add('active');
     } else {
         contact.classList.remove('active');

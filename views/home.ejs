@@ -1,23 +1,23 @@
 <%- include('./partials/head.ejs') %>
-<div class="bgcolor">
+<div class="container-fluid m-0 p-0 bgcolor">
     <%- include('./partials/nav.ejs') %>
-    <div class="hero d-flex justify-content-center align-items-center text-white">
-        <div class="d-flex gap-5">
-            <div class="d-flex flex-column justify-content-center me-5" style="width: 400px;">
+    <div class="hero d-flex justify-content-center align-items-center text-white ">
+        <div class="d-flex hero-flex gap-5 justify-content-center align-items-center my-5">
+            <div class="d-flex flex-column justify-content-center px-3" style="max-width: 432px;">
                 <h1>About Me</h1>
                 <p>I am passionate about Web Development, and have dedicated myself to learning and growing in this field. Through my work, I have developed skills in different programming languages such as NodeJs and ReactJS, and have had the opportunity to collaborate with KodeGo Bootcamp.</p>
                 <p>I believe in my technical skills, and strive to make a positive impact through my work. In my free time, I enjoy puzzles and multiplayer video games, and am always looking for new ways to challenge myself and expand my horizons.</p>
             </div>
-            <div class="d-flex gap-3">
+            <div class="d-flex gap-3 hero-pic">
                 <div style="width: 250px; height: 350px; overflow: hidden; text-align: center; margin:0 auto;">
-                    <img class="h-100" style="margin:0 -100%;" src="/img/me.jpg" alt="" srcset="">
+                    <img class="h-100" style="margin:0 -100%;" src="/img/me2.jpg" alt="" srcset="">
                 </div>
                 <div>
-                    <div class="d-flex flex-column align-items-end mb-5" style="width: 250px;">
+                    <div class="d-flex flex-column hero-name mb-5" style="width: 250px;">
                         <h5>Kenneth Tan</h5>
-                        <span>Full-stack Web Developer</span>
+                        <span>Web Developer</span>
                     </div>
-                    <div style="width: 250px; height: 350px; overflow: hidden; text-align: center; margin:0 auto;">
+                    <div class="hero-hide" style="width: 250px; height: 350px; overflow: hidden; text-align: center; margin:0 auto;">
                         <img class="h-100" style="margin:0 -100%;" src="/img/code.png" alt="" srcset="">
                     </div>
                 </div>
@@ -25,10 +25,9 @@
         </div>
     </div>
     <div id="technologies"></div>
-    <div class="parallax1">
-        <div style="height: 90px;"></div>
-        <div class="container d-flex flex-wrap align-items-center text-white">
-            <div class="d-flex justify-content-center flex-wrap w-50">
+    <div class="parallax1 mt-5">
+        <div class="container-lg d-flex flex-wrap align-items-center flex-column flex-md-row text-white py-5">
+            <div class="d-flex justify-content-center flex-wrap col-12 col-md-6">
                 <div class="d-flex flex-column justify-content-center align-items-center col-6">
                     <img data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
@@ -65,7 +64,7 @@
                     <p class="text-center fs-4 mt-1">PHP</p>
                 </div>
             </div>
-            <div class="d-flex justify-content-center flex-wrap w-50">
+            <div class="d-flex justify-content-center flex-wrap col-12 col-md-6">
                 <div class="d-flex flex-column justify-content-center align-items-center col-6">
                     <img src="/img/nodejs.png" data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
@@ -105,143 +104,228 @@
         </div>
     </div>
     <div id="projects"></div>
-    <div class="project">
-        <div class="container d-flex justify-content-center align-items-center text-white h-100">
-            <div class="d-flex flex-column col-6">
-                <div class="d-flex gap-5 pb-5 mb-5 w-100" data-aos="zoom-out-right">
-                    <a target="_blank" href="https://cliniclass.vercel.app/">
-                        <div class="pjcontainer" style="width: 300px; height: 180px; position: relative;">
-                            <img class="h-100 w-100 d-block img-thumbnail" src="/img/cliniclass.png" alt="">
-                            <div class="overlay">Cliniclass</div>
-                        </div>
-                    </a>
-                    <div style="width: 270px;">
-                        <a target="_blank" href="https://cliniclass.vercel.app/">Mini Project 1: Cliniclass</a>
-                        <p>A responsive and static website of clinic management system that designed to manage the day-to-day operations of a healthcare clinic. The website typically includes a suite of tools and features that allow clinic staff to manage patient information and medical records.</p>
+    <div class="project pt-5" style="overflow-x: hidden;">
+        <div class="container d-flex flex-column text-white h-100">
+            <h1 class="mt-3 mb-4">Projects</h1>
+            <div class="d-flex gap-4 pjs"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <a target="_blank" href="https://cliniclass.vercel.app/">
+                    <div class="pjcontainer" style="width: 300px; height: 180px; position: relative;">
+                        <img class="h-100 w-100 d-block img-thumbnail" src="/img/cliniclass.png" alt="">
+                        <div class="overlay">Cliniclass</div>
                     </div>
-                </div>
-                <div class="d-flex gap-5 mt-5 w-100" data-aos="zoom-out-right">
-                    <a target="_blank" href="https://kodegram.devph.space/">
-                        <div class="pjcontainer" style="width: 300px; height: 180px; position: relative;">
-                            <img class="h-100 w-100 d-block img-thumbnail" src="/img/kodegram.png" alt="">
-                            <div class="overlay">Kodegram</div>
-                        </div>
-                    </a>
-                    <div style="width: 270px;">
-                        <a target="_blank" href="https://kodegram.devph.space/">Capstone: Kodegram</a>
-                        <p>Kodegram is built with MERN stack and a social media app that allows users to interact, share content, and communicate with other users. This website provides tools and features such as profiles, news feeds, messaging, commenting, liking, posting and following.</p>
+                </a>
+                <div style="width: 270px;">
+                    <a class="fs-5" target="_blank" href="https://cliniclass.vercel.app/">CLINICLASS</a>
+                    <div class="d-flex my-1 flex-wrap gap-2">
+                        <span class="badge text-bg-info">Static</span>
+                        <span class="badge text-bg-success">Responsive</span>
+                        <span class="badge text-bg-primary">Bootstrap</span>
                     </div>
+                    <p>A responsive and static website of clinic management system that designed to manage the day-to-day operations of a healthcare clinic. The website typically includes a suite of tools and features that allow clinic staff to manage patient information and medical records.</p>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="d-flex flex-row-reverse gap-5 w-100" data-aos="zoom-out-left">
-                    <a target="_blank" href="https://supersell.cyclic.app/">
-                        <div class="pjcontainer" style="width: 300px; height: 180px; position: relative;">
-                            <img class="h-100 w-100 d-block img-thumbnail" src="/img/supersell.png" alt="">
-                            <div class="overlay">Supersell</div>
-                        </div>
-                    </a>
-                    <div style="width: 270px;">
-                        <a target="_blank" href="https://supersell.cyclic.app/">Mini Project 2: Supersell</a>
-                        <p>Supersell is a buy and sell website application that allows individuals or businesses to buy and sell products or services. The website was built with NodeJs, Embedded JavaScript Templating and MongoDb.</p>
+            <div class="d-flex gap-4 pje pjm"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <a target="_blank" href="https://supersell.cyclic.app/">
+                    <div class="pjcontainer" style="width: 300px; height: 180px; position: relative;">
+                        <img class="h-100 w-100 d-block img-thumbnail" src="/img/supersell.png" alt="">
+                        <div class="overlay">Supersell</div>
                     </div>
+                </a>
+                <div style="width: 270px;">
+                    <a class="fs-5" target="_blank" href="https://supersell.cyclic.app/">SUPERSELL</a>
+                    <div class="d-flex my-1 flex-wrap gap-2">
+                        <span class="badge text-bg-success">Responsive</span>
+                        <span class="badge text-bg-primary">Bootstrap</span>
+                        <span class="badge text-bg-warning">MongoDB</span>
+                        <span class="badge text-bg-secondary">ExpressJS</span>
+                        <span class="badge text-bg-light">NodeJS</span>
+                    </div>
+                    <p>Supersell is a buy and sell website application that allows individuals or businesses to buy and sell products or services. The website was built with NodeJs, Embedded JavaScript Templating and MongoDb.</p>
                 </div>
             </div>
-            
+            <div class="d-flex gap-4 pjm pjs"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <a target="_blank" href="https://kodegram.devph.space/">
+                    <div class="pjcontainer" style="width: 300px; height: 180px; position: relative;">
+                        <img class="h-100 w-100 d-block img-thumbnail" src="/img/kodegram.png" alt="">
+                        <div class="overlay">Kodegram</div>
+                    </div>
+                </a>
+                <div style="width: 270px;">
+                    <a class="fs-5" target="_blank" href="https://kodegram.devph.space/">KODEGRAM</a>
+                    <div class="d-flex my-1 flex-wrap gap-2">
+                        <span class="badge text-bg-success">Responsive</span>
+                        <span class="badge text-bg-primary">Bootstrap</span>
+                        <span class="badge text-bg-warning">MongoDB</span>
+                        <span class="badge text-bg-secondary">ExpressJS</span>
+                        <span class="badge text-bg-danger">ReactJS</span>
+                        <span class="badge text-bg-light">NodeJS</span>
+                    </div>
+                    <p>Kodegram is built with MERN stack and a social media app that allows users to interact, share content, and communicate with other users. This website provides tools and features such as profiles, news feeds, messaging, commenting, liking, posting and following.</p>
+                </div>
+            </div>
+            <div class="d-flex gap-4 pje pjm"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <a target="_blank" href="https://scheduler.devph.space/">
+                    <div class="pjcontainer" style="width: 300px; height: 180px; position: relative;">
+                        <img class="h-100 w-100 d-block img-thumbnail" src="/img/ssystem.png" alt="">
+                        <div class="overlay">Scheduling System</div>
+                    </div>
+                </a>
+                <div style="width: 270px;">
+                    <a class="fs-5" target="_blank" href="https://scheduler.devph.space/">SCHEDULING SYSTEM</a>
+                    <div class="d-flex my-1 flex-wrap gap-2">
+                        <span class="badge text-bg-primary">Bootstrap</span>
+                        <span class="badge text-bg-info">PHP</span>
+                        <span class="badge text-bg-warning">MySQL</span>
+                    </div>
+                    <p class="mb-0 pb-0">A Scheduling System for schools and classes that allows user to view and manage the allocation of tasks, events or activities over time. These systems are commonly used in various industries.</p>
+                    <p class="my-0 py-0">username: "admin" password: "admin"</p>
+                </div>
+            </div>
+            <div class="d-flex gap-4 mb-5 pjm pjs"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+            <a target="_blank" href="https://sms-notif.devph.space/">
+                    <div class="pjcontainer" style="width: 300px; height: 180px; position: relative;">
+                        <img class="h-100 w-100 d-block img-thumbnail" src="/img/sms.png" alt="">
+                        <div class="overlay">SMS Notification System</div>
+                    </div>
+                </a>
+                <div style="width: 270px;">
+                    <a class="fs-5" target="_blank" href="https://kodegram.devph.space/">SMS NOTIFICATION SYSTEM</a>
+                    <div class="d-flex my-1 flex-wrap gap-2">
+                        <span class="badge text-bg-primary">Bootstrap</span>
+                        <span class="badge text-bg-info">PHP</span>
+                        <span class="badge text-bg-warning">MySQL</span>
+                    </div>
+                    <p class="mb-0 pb-0">SMS Notifcation System is a communication mechanism that sends short text messages to individuals to provide them with important information, updates, alerts, or reminders. This system focuses on managing school's exams and alert students about their incomplete subjects.</p>
+                    <p class="my-0 py-0">id: "1001" password: "admin"</p>
+                </div>
+            </div>
         </div>
     </div>
     <div id="work"></div>
-    <div class="work d-flex justify-content-center align-items-center text-white">
-        <div class="container d-flex justify-content-center align-items-center gap-5">
-            <div class="col-3">
-                <div id="list-example" class="d-flex flex-column align-items-center">
-                    <a class="list-group-item list-group-item-action fs-4 fstyle text-center" href="#list-item-1">
-                        Kodego Bootcamp
-                        <span class="smalltxt d-block">Dec 2022 - Mar 2023</span>
-                    </a>
-                    <span class="fs-1">•</span>
-                    <a class="list-group-item list-group-item-action fs-4 fstyle text-center" href="#list-item-2">
-                        Lee Systems Technology Ventures Inc. (Trainee)
-                        <span class="smalltxt d-block">Oct - Nov 2018</span>
-                    </a>
-                    <span class="fs-1">•</span>
-                    <a class="list-group-item list-group-item-action fs-4 fstyle text-center" href="#list-item-3">
-                        Technological University of the Philippines (BSIT)
-                        <span class="smalltxt d-block">Jun 2014 - Mar 2018</span>
-                    </a>
-                    <span class="fs-1">•</span>
-                    <a class="list-group-item list-group-item-action fs-4 fstyle text-center" href="#list-item-4">
-                        Incuventure Partners Corporation Internship
-                        <span class="smalltxt d-block">Jun - Nov 2017</span>
-                    </a>
-                </div>
+    <div class="work d-flex justify-content-center align-items-center text-white pt-5">
+        <div class="container d-flex flex-column justify-content-center align-items-center gap-5 my-5">
+            <h1 class="align-self-start m-0 p-0">Experiences</h1>
+            <div class="w-100">
+                <h2>Kodego Bootcamp Training</h2>
+                <p class="mb-4">Dec 2022 - Mar 2023</p>
+                <p class="fs-5">KodeGo is a coding bootcamp based in Manila, Philippines that offers a 12-weeks, live online full-stack web development program. KodeGo's goal is to help aspiring web developers including absolute beginners learn web development at an accelerated pace and help them move into in-demand tech roles across software-dependent industries.</p>
+                <p class="fs-5">As KodeGo student, I learned the essentials of web development and have a solid proficiency in both front-end and back-end technologies. During our bootcamp i led three different teams for our projects, and as a leader i provided support, assigned specific tasks, set a time limit for each task and compiled our resources and codes that led to the success of our project making.</p>
+                <p class="fs-5">The pace of the program prepared by Kodego was pretty fast but i was able to keep up with it since i always tried to finish every task on time. We studied different programming languages and frameworks such as NodeJs and ReactJs. Since i was a leader in our previous projects, i also learned a lot about team work and how it is important in the workplace.</p>
+                <ul class="navbar-nav flex-row flex-wrap gap-4">
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#ojt1modal">
+                        <img class="img-thumbnail" src="/img/award_5star.png" style="width: 300px; height: 200px;" alt="">
+                    </li>
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#ojt2modal">
+                        <img class="img-thumbnail" src="/img/award_leader.png"style="width: 300px; height: 200px;" alt="">
+                    </li>
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#ojt3modal">
+                        <img class="img-thumbnail" src="/img/award_rank1.png"style="width: 300px; height: 200px;" alt="">
+                    </li>
+                </ul>
             </div>
-            <div class="col-8">
-                <div id="style-2" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0" style="height: 450px; overflow-y: scroll;">
-                    <div class="pb-5" id="list-item-1">
-                        <h4 class="mytitle">KodeGo Bootcamp</h4>
-                        <p class="fs-5">KodeGo is a coding bootcamp based in Manila, Philippines that offers a 12-weeks, live online full-stack web development program. KodeGo's goal is to help aspiring web developers including absolute beginners learn web development at an accelerated pace and help them move into in-demand tech roles across software-dependent industries.</p>
-                        <p class="fs-5">As KodeGo student, I learned the essentials of web development and have a solid proficiency in both front-end and back-end technologies. During our bootcamp i led three different teams for our projects, and as a leader i provided support, assigned specific tasks, set a time limit for each task and compiled our resources and codes that led to the success of our project making.</p>
-                        <p class="fs-5">The pace of the program prepared by Kodego was pretty fast but i was able to keep up with it since i always tried to finish every task on time. We studied different programming languages and frameworks such as NodeJs and ReactJs. Since i was a leader in our previous projects, i also learned a lot about team work and how it is important in the workplace.</p>
-                    </div>
-                    <div class="pb-5" id="list-item-2">
-                        <h4 class="mytitle">Lee Systems Technology Ventures Inc. (Trainee)</h4>
-                        <p class="fs-5">Lee Systems Technology Ventures is an I.T. company located in Caloocan. The company is simplifying software solutions that focus mainly on HR processes, accounting, payroll and timekeeping. I was a PHP developer trainee there for one month and I learned a lot during the training because they were also teaching me other programming languages and libraries such as javascript, jquery, ajax, json, and sql.</p>
-                        <p class="fs-5">I was given a lot of tasks where i needed to execute all of the built-in functions and create a simple application with sql database. On my last week of training i was assigned to the main developer team and tasked to generate pdf reports of their website using PHP.</p>
-                        <ul class="navbar-nav flex-row gap-5">
-                            <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#lee1modal">
-                                <img class="img-thumbnail" src="/img/lee1.jpg" style="width: 150px; height: 200px;" alt="">
-                            </li>
-                            <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#lee2modal">
-                                <img class="img-thumbnail" src="/img/lee2.jpg"style="width: 150px; height: 200px;" alt="">
-                            </li>
-                            <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#lee3modal">
-                                <img class="img-thumbnail" src="/img/lee3.jpg"style="width: 150px; height: 200px;" alt="">
-                            </li>
-                        </ul>
-                        
-                    </div>
-                    <div class="pb-5" id="list-item-3">
-                        <h4 class="mytitle">Technological University of the Philippines</h4>
-                        <p class="fs-5">The Technological University of the Philippines commonly known as TUP, is a coeducational state university in the Philippines. With more than a hundred years of existence since its establishment, TUP has indeed transformed its "trade school" image into a dynamic premier state university in the fields of industrial, technological and engineering education. Its mark of excellence is not only known locally but also internationally.</p>
-                        <p class="fs-5">I graduated on this university with bachelor's degree in information technology in 2018. When i was in college i found out that i am really passionate about programming and it motivated me to stay on this course. During my years of study, i was often assigned as a leader in different programming projects where i learned a lot and improved my communication skill as well. For my thesis, my group created a School Supplies Vendo, a coin operated embedded system for dispensing school supplies where we used various equipments such as arduino, raspberry pi, servo motors, coin acceptor, stepper motors and tft lcd touch screen.</p>
-                        <ul class="navbar-nav flex-row gap-5 mb-4">
-                            <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#thesis1modal">
-                                <img class="img-thumbnail" src="/img/thesis1.png" style="width: 300px; height: 200px;" alt="">
-                            </li>
-                            <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#thesis2modal">
-                                <img class="img-thumbnail" src="/img/thesis2.jpg"style="width: 150px; height: 200px;" alt="">
-                            </li>
-                            <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#thesis3modal">
-                                <img class="img-thumbnail" src="/img/thesis3.jpg"style="width: 300px; height: 200px;" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="list-item-4">
-                        <h4 class="mytitle">Incuventure Partners Corporation Internship</h4>
-                        <p class="fs-5">Incuventure is an information technology ("IT"​) solutions provider offering a full range of services, including e-Business consulting, application design and development, and system integration. Its combination of industry experience, IT expertise, business acumen, and total commitment to customer satisfaction puts their company in the perfect position to deliver the best-of-class solutions to its clients.</p>
-                        <p class="fs-5">I was an intern here before where i was assigned in main branch located in Quezon city and tasked to develop a timekeeping system using java. And on my last month i was reassigned in their partner's branch in Makati, MediCard, where i was tasked to give support to their developer team. We were creating a Management information systems, It is a website that is used to manage the patients, the appointments, the doctors' schedules, prescriptions, manage inventory, etc. </p>
-                        <ul class="navbar-nav flex-row gap-3 mb-4">
-                            <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#ojt1modal">
-                                <img class="img-thumbnail" src="/img/ojt1.png" style="width: 300px; height: 200px;" alt="">
-                            </li>
-                            <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#ojt2modal">
-                                <img class="img-thumbnail" src="/img/ojt2.jpg"style="width: 300px; height: 200px;" alt="">
-                            </li>
-                            <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#ojt3modal">
-                                <img class="img-thumbnail" src="/img/ojt3.jpg"style="width: 300px; height: 200px;" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="w-100">
+                <h2>Assistant Property Manager</h2>
+                <p class="mb-4">Jan 2020 - Present</p>
+                <p class="fs-5">During the year 2020, when the COVID pandemic started, I could not apply for an on-site job because of COVID restrictions. It was that time that I decided to help in my family's real estate business. I was given the opportunity to be the Assistant Property Manager. My usual tasks are inspection of units and move-out procedures for outgoing tenants.</p>
+                <p class="fs-5">I am also responsible for the repair and preparation of units for vacancy and turn-overs. I am tasked to meet up with various contractors for repair of condominium units in preparation for new residents. From time to time, I also prepare and take care of tenant documents regarding monthly/yearly subscriptions of electricity, internet, etc.</p>
+                <ul class="navbar-nav flex-row flex-wrap gap-4">
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#manager1modal">
+                        <img class="img-thumbnail" src="/img/premove.png" style="width: 150px; height: 200px;" alt="">
+                    </li>
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#manager2modal">
+                        <img class="img-thumbnail" src="/img/checklist.png"style="width: 150px; height: 200px;" alt="">
+                    </li>
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#manager3modal">
+                        <img class="img-thumbnail" src="/img/unit.jpg"style="width: 150px; height: 200px;" alt="">
+                    </li>
+                </ul>
+            </div>
+             <div class="w-100">
+                <h2>Subway Restaurant (Cashier)</h2>
+                <p class="mb-4">July - Nov 2019</p>
+                <p class="fs-5">Subway is an American multi-national fast food restaurant franchise that specializes in submarine sandwiches, wraps, salads and drinks. I was given the opportunity to work in one of the stores. I worked as a sandwich maker. The tasks, aside from making salads and sandwiches, include food preparation at the beginning of the shift, customer reception, cleaning and storing of food items at the end of the shift. I eventually also worked as a Cashier in the same store, a job which includes collecting of payments, auditing and ensuring that the prices and quantities of orders are correct. Overall, it was a great job experiencem</p>
+                <ul class="navbar-nav flex-row flex-wrap gap-4">
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#subway1modal">
+                        <img class="img-thumbnail" src="/img/subway.jpg" style="width: 150px; height: 200px;" alt="">
+                    </li>
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#subway2modal">
+                        <img class="img-thumbnail" src="/img/emps.jpg"style="width: 150px; height: 200px;" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="w-100">
+                <h2>Lee Systems Technology Ventures Inc. (Trainee)</h2>
+                <p class="mb-4">Oct - Nov 2018</p>
+                <p class="fs-5">Lee Systems Technology Ventures is an I.T. company located in Caloocan. The company is simplifying software solutions that focus mainly on HR processes, accounting, payroll and timekeeping. I was a PHP developer trainee there for one month and I learned a lot during the training because they were also teaching me other programming languages and libraries such as javascript, jquery, ajax, json, and sql.</p>
+                <p class="fs-5">I was given a lot of tasks where i needed to execute all of the built-in functions and create a simple application with sql database. On my last week of training i was assigned to the main developer team and tasked to generate pdf reports of their website using PHP.</p>
+                <ul class="navbar-nav flex-row flex-wrap gap-4">
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#lee1modal">
+                        <img class="img-thumbnail" src="/img/lee1.jpg" style="width: 150px; height: 200px;" alt="">
+                    </li>
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#lee2modal">
+                        <img class="img-thumbnail" src="/img/lee2.jpg"style="width: 150px; height: 200px;" alt="">
+                    </li>
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#lee3modal">
+                        <img class="img-thumbnail" src="/img/lee3.jpg"style="width: 150px; height: 200px;" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="w-100">
+                <h2>Technological University of the Philippines (BSIT)</h2>
+                <p class="mb-4">Jun 2014 - Mar 2018</p>
+                <p class="fs-5">The Technological University of the Philippines commonly known as TUP, is a coeducational state university in the Philippines. With more than a hundred years of existence since its establishment, TUP has indeed transformed its "trade school" image into a dynamic premier state university in the fields of industrial, technological and engineering education. Its mark of excellence is not only known locally but also internationally.</p>
+                <p class="fs-5">I graduated on this university with bachelor's degree in information technology in 2018. When i was in college i found out that i am really passionate about programming and it motivated me to stay on this course. During my years of study, i was often assigned as a leader in different programming projects where i learned a lot and improved my communication skill as well. For my thesis, my group created a School Supplies Vendo, a coin operated embedded system for dispensing school supplies where we used various equipments such as arduino, raspberry pi, servo motors, coin acceptor, stepper motors and tft lcd touch screen.</p>
+                <ul class="navbar-nav flex-row flex-wrap gap-4">
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#thesis1modal">
+                        <img class="img-thumbnail" src="/img/thesis1.png" style="width: 300px; height: 200px;" alt="">
+                    </li>
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#thesis2modal">
+                        <img class="img-thumbnail" src="/img/thesis2.jpg"style="width: 150px; height: 200px;" alt="">
+                    </li>
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#thesis3modal">
+                        <img class="img-thumbnail" src="/img/thesis3.jpg"style="width: 300px; height: 200px;" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="w-100">
+                <h2>Incuventure Partners Corporation Internship</h2>
+                <p class="mb-4">Jun - Nov 2017</p>
+                <p class="fs-5">Incuventure is an information technology ("IT"​) solutions provider offering a full range of services, including e-Business consulting, application design and development, and system integration. Its combination of industry experience, IT expertise, business acumen, and total commitment to customer satisfaction puts their company in the perfect position to deliver the best-of-class solutions to its clients.</p>
+                <p class="fs-5">I was an intern here before where i was assigned in main branch located in Quezon city and tasked to develop a timekeeping system using java. And on my last month i was reassigned in their partner's branch in Makati, MediCard, where i was tasked to give support to their developer team. We were creating a Management information systems, It is a website that is used to manage the patients, the appointments, the doctors' schedules, prescriptions, manage inventory, etc. </p>
+                <ul class="navbar-nav flex-row flex-wrap gap-4">
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#ojt1modal">
+                        <img class="img-thumbnail" src="/img/ojt1.png" style="width: 300px; height: 200px;" alt="">
+                    </li>
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#ojt2modal">
+                        <img class="img-thumbnail" src="/img/ojt2.jpg"style="width: 300px; height: 200px;" alt="">
+                    </li>
+                    <li class="nav-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#ojt3modal">
+                        <img class="img-thumbnail" src="/img/ojt3.jpg"style="width: 300px; height: 200px;" alt="">
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
     <div id="contact"></div>
     <div class="contact d-flex justify-content-center align-items-center">
-        <div class="container text-white">
-            <div class="row">
-                <div class="contact-left">
+        <div class="container-lg px-4 text-white">
+            <div class="d-flex flex-column flex-md-row gap-5 my-5">
+                <div class="col-auto">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fas fa-paper-plane"></i> kennethtan1414@gmail.com</p>
                     <p><i class="fas fa-phone-square-alt"></i> +63 997 496 0017</p>
@@ -251,14 +335,14 @@
                         <a href="https://github.com/kt1422"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/kenneth-tan-a0a8a214a/"><i class="fab fa-linkedin"></i></a>
                     </div>
-                    <a href="img/cv-kennethtan.pdf" download class="btn btn2">Download CV</a>
+                    <a href="img/cv-kennethtan.pdf" download class="btn btn-info btn2">Download CV</a>
                 </div>
-                <div class="contact-right">
+                <div class="col">
                     <form class="mb-3" name="submit-to-google-sheet">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your email" required>
                         <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        <button type="submit" class="btn btn-primary btn3 float-end">Submit</button>
                     </form>
                     <span class="text-warning" id="msg"></span>
                 </div>
@@ -269,4 +353,6 @@
 <%- include('./partials/modal-lee.ejs') %>
 <%- include('./partials/modal-thesis.ejs') %>
 <%- include('./partials/modal-ojt.ejs') %>
+<%- include('./partials/modal-subway.ejs') %>
+<%- include('./partials/modal-manager.ejs') %>
 <%- include('./partials/foot.ejs') %>
